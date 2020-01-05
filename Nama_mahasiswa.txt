@@ -1,0 +1,7 @@
+Nama Mahasiswa 1: I Putu Brama Damuharta Aryana
+NIM             : 180030112
+Kelas           : AB183
+
+Nama Mahasiswa 2: I Made Chrisana Darmawan
+NIM             : 180030099
+Kelas           : AB183
