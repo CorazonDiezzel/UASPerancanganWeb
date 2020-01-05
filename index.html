@@ -12,14 +12,14 @@
     <title>Desain Web</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(grey, white)">
                 <a class="navbar-brand col-sm-12 col-md-6" href="#">
                   <div class="row">
                     <div class="col-md-5 col-sm-12">
-                        <img src="./assets/icons/LOGO.png" class="img-fluid mx-auto d-block" alt="Responsive image" style="height: 14vh">
+                        <img src="./assets/icons/LOGO.png" class="img-fluid mx-auto d-block" alt="Responsive image" style="height: 14vh">                        
                     </div>
                     <div class="col-md-7">
-                      <h3 style="text-align: center">ANJIR FASHION</h3>
+                      <h3 style="text-align: center; margin-top: 10px;">ANJIR FASHION</h3>
                       <h6 style="text-align: center;font-style: unset;font-weight: normal;">Wear what you love!
                       </h6>
                     </div>
@@ -31,23 +31,15 @@
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Beranda<span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Kontak</a>
+                      <a class="nav-link" href="index.html">Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Produk
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Set Outfit</a>
-                        <a class="dropdown-item" href="#">Baju</a>
-                        <a class="dropdown-item" href="#">Jaket</a>
-                        <a class="dropdown-item" href="#">Celana</a>
-                        <a class="dropdown-item" href="#">Sepatu/Sandal</a>
-                        <a class="dropdown-item" href="#">Aksesoris</a>
+                        <a class="dropdown-item" href="submenu.html">Set Outfit</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Perlu rekomendasi produk?</a>
                       </div>
@@ -57,14 +49,14 @@
                         Tentang
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Layanan Kami</a>
+                        <a class="dropdown-item" href="tentang.html">Tentang kami</a>
                         <a class="dropdown-item" href="#">Syarat&Ketentuan</a>
                       </div>
                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Cari kebutuhanmu..." aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: honeydew;">Cari</button>
                   </form>
                 </div>
               </nav>
@@ -73,27 +65,40 @@
                   <div style="height:2vh;background-color: rgba(0,0,0,0.7);"></div>
                 </div>
               </div>
-      <div class="row">
-          <div class="col-md-12" style="text-align:center;margin-bottom:15vh">
-                <img src="./assets/images/iklan.jpg" class="img-fluid" alt="Responsive image" style="width:90%;margin-bottom:2vh">
-                <!-- <div class="row">
-                  <div class="col-md-3 col-sm-3 col-ls-3">
-                    <img src="./assets/images/header.jpg" class="img-fluid" alt="Responsive image" style="height: 10vh">
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-ls-3">
-                    <img src="./assets/images/header.jpg" class="img-fluid" alt="Responsive image" style="height: 10vh">
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-ls-3">
-                    <img src="./assets/images/header.jpg" class="img-fluid" alt="Responsive image" style="height: 10vh">
-                  </div>
-                </div> -->
-              <div class="caption" style="background-color:darkorange">
-                <h2>HANYA HARI INI! DISKON SAMPAI DENGAN 70%!</h2>
-              </div>
+
+        <div class="row">
+          <div class="col-md-12"  style="background: url('./assets/images/iklan.jpg'); width: 100%; height: 500px;">
+            <div class="deskripsi" style="background-color:honeydew; border-radius: 50px; margin-top:190px; margin-right: 130px; margin-left: 130px; margin-bottom: 100px;text-align: center;">
+              <h4 style="font-weight: 500;"><br>SELAMAT DATANG DI OFFICIAL WEBSITE KAMI!</h4>
+              <p style="font-size: 15pt;">Disini bukan hanya tersedia barang berkualitas,
+                <br>tapi juga barang yang nyaman dikenakan namun tetap sporty dan keren<br><br>
+              </p>
+            </div>
           </div>
-          <div class="col-md-12">
+        </div>
+            <div class="caption" style="background-color:darkorange; width: 100%; text-align: center;">
+              <h2>HANYA HARI INI! DISKON SAMPAI DENGAN 70%!</h2>
+            </div>
+                  <div id="slider" style="margin-top: 50px;">
+                    <a href="./assets/images/jam.jpg" class="next">Next</a> 	<!--all ways mention control class for slider anchor -->
+                    <a href="#" class="prev">Prev</a>	<!--all ways mention control class for slider anchor -->
+                    <ul>
+                      <li>
+                        <img src="./assets/images/iklan.jpg" style="width: 100%;">
+                      </li>
+                      <li>SLIDE 2</li>
+                      <li>SLIDE 3</li>
+                      <li>SLIDE 4</li>
+                      <li>SLIDE 5</li>
+                      <li>SLIDE 6</li>
+                      <li>SLIDE 7</li>
+                      <li>SLIDE 8</li>
+                    </ul>
+                  </div>  
+          </div>
+          <div class="col-md-12" style="margin-top: 50px;">
             <h4 style="text-align:center">INGIN TAMPIL TRENDI?</h4>
-            <p style="text-align:center">Di ANJIR FASHION ada banyak sekali proudk-produk terbaru dan pastinya berkualitas cuma untuk kamu yang ingin jadi <i>trendsetter</i>!</p>
+            <p style="text-align:center">Di ANJIR FASHION ada banyak sekali produk-produk terbaru dan pastinya berkualitas cuma untuk kamu yang ingin jadi <i>trendsetter</i>!</p>
           </div>
       </div>
       <!-- <div class="row">
@@ -103,40 +108,31 @@
       </div> -->
       <div class="row" style="margin-top: 1vh;margin: 1vh 0.5vw;text-align: justify;font-size: 0.7em">
           <div class="col-md-3" data-toggle="modal" data-target="#exampleModal">
-                <img src="./assets/images/lake.jpg" class="img-fluid" alt="Responsive image">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
-                </p>
+                <img src="./assets/images/adidas.jpg" class="img-fluid" alt="Responsive image">
+                <h5 style="text-align: center; margin-top: 5px; font-weight: 500;">
+                   Jaket Adidas Brown
+                </h5>
           </div>
           <div class="col-md-3" data-toggle="modal" data-target="#exampleModal1">
-                <img src="./assets/images/shore.jpg" class="img-fluid" alt="Responsive image">
-            <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
-                </p>
+                <img src="./assets/images/setoutfit.jpg" class="img-fluid" alt="Responsive image">
+                <h5 style="text-align: center; margin-top: 5px; font-weight: 500;">
+                   Set Outfit dari H&M
+                </h5>
             </div>
           <div class="col-md-3" data-toggle="modal" data-target="#exampleModal2">
-                <img src="./assets/images/waterfall.jpg" class="img-fluid" alt="Responsive image">
-          <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
-                </p>
+                <img src="./assets/images/sepatu.jpg" class="img-fluid" alt="Responsive image">
+                <h5 style="text-align: center; margin-top: 5px; font-weight: 500;">
+                  Sepatu CTNZ Original
+                </h5>
             </div>
           <div class="col-md-3" data-toggle="modal" data-target="#exampleModal3">
-                <img src="./assets/images/thunder.jpg" class="img-fluid" alt="Responsive image">
-          <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
-                </p>
+                <img src="./assets/images/kemeja.jpg" class="img-fluid" alt="Responsive image">
+                <h5 style="text-align: center; margin-top: 5px; font-weight: 500;">
+                  Kemeja Bercoult Ori
+                </h5>
             </div>
       </div>
-      <div class="row">
-            <div class="col-md-12" style="padding: 2vh 2vw">
-                  <h3 style="text-align:center">HEADING</h3>
-                  <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe corporis iure quos consectetur exercitationem amet quisquam molestias hic officiis, a iste quas odio obcaecati doloremque magni ducimus nulla eius modi.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem repellat ipsa earum quas optio illum unde voluptatibus quia nesciunt? Omnis doloremque quas minima inventore libero odio pariatur excepturi, eaque culpa.
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis soluta ratione neque nulla? Blanditiis placeat rem similique nobis repudiandae ipsa error dolorum, deleniti sed, illum quo unde fugit necessitatibus velit?
-                  </p>
-            </div>
-        </div>
+
         <!-- <footer style="background-color: rgba(0, 0, 0, 0.5);
         ">
             &copy; Copyright 2019 Corazon Corporation.
@@ -148,38 +144,83 @@
         <div class="container-fluid text-center text-md-left">
       
           <!-- Grid row -->
-          <div class="row">
-      
+          <div class="row" style="margin-left: 50px; margin-right: 50px;">
             <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
-      
-              <!-- Content -->
-              <h5 class="text-uppercase">Footer Content</h5>
-              <p>Here you can use rows and columns to organize your footer content.</p>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <hr class="clearfix w-100 d-md-none pb-3">
-      
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
+            <div class="col-md-2 mb-md-0 mb-2">
       
               <!-- Links -->
-              <h5 class="text-uppercase">Links</h5>
+              <h5 class="text-uppercase">Terbaru</h5>
       
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!">Link 1</a>
+                  <a href="#!">Sepatu Adidas</a>
                 </li>
                 <li>
-                  <a href="#!">Link 2</a>
+                  <a href="#!">Jacket Alcotra</a>
                 </li>
                 <li>
-                  <a href="#!">Link 3</a>
+                  <a href="#!">Celana Jeans Ori</a>
                 </li>
                 <li>
-                  <a href="#!">Link 4</a>
+                  <a href="#!">Aksesoris</a>
+                </li>
+                <li>
+                  <a href="#!">H&M Outfit</a>
+                </li>
+                <li>
+                  <a href="#!">Tas Tracker</a>
+                </li>
+                <li>
+                  <a href="#!">Kemeja Ori</a>
+                </li>
+                <li>
+                  <a href="#!">Kaos Sporty</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-2">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Anjir Fashion</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Tentang Kami</a>
+                </li>
+                <li>
+                  <a href="#!">Official Store</a>
+                </li>
+                <li>
+                  <a href="#!">Aplikasi Anjir Fashion</a>
+                </li>
+                <li>
+                  <a href="#!">Bebas Ongkir</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-2">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Terpopuler</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">SST Windbreaker</a>
+                </li>
+                <li>
+                  <a href="#!">Standard 20 Jacket</a>
+                </li>
+                <li>
+                  <a href="#!">Skinny No Fade Black Jeans</a>
+                </li>
+                <li>
+                  <a href="#!">Sesame Street X H&M</a>
                 </li>
               </ul>
       
@@ -187,29 +228,61 @@
             <!-- Grid column -->
       
             <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
+            <div class="col-md-2 mb-md-0 mb-2">
       
               <!-- Links -->
-              <h5 class="text-uppercase">Links</h5>
+              <h5 class="text-uppercase">Promo</h5>
       
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!">Link 1</a>
+                  <a href="#!">Diskon Hingga 70%</a>
                 </li>
                 <li>
-                  <a href="#!">Link 2</a>
+                  <a href="#!">Beli 2 Lebih Hemat</a>
                 </li>
                 <li>
-                  <a href="#!">Link 3</a>
+                  <a href="#!">Celana Adidas Terbaik</a>
                 </li>
                 <li>
-                  <a href="#!">Link 4</a>
+                  <a href="#!">Bebas Ongkir Bebas Ribet</a>
                 </li>
               </ul>
       
             </div>
             <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-2">
       
+              <!-- Links -->
+              <h5 class="text-uppercase">Situs Partner</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Adidas Outdoor</a>
+                </li>
+                <li>
+                  <a href="#!">Alcotra Outfit</a>
+                </li>
+              </ul>
+              <!-- Links -->
+              <h5 class="text-uppercase">Bantuan</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Bantuan Anjir Fashion</a>
+                </li>
+                <li>
+                  <a href="#!">Syarat dan Ketentuan</a>
+                </li>
+                <li>
+                  <a href="#!">Kebijakan Privasi</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+
           </div>
           <!-- Grid row -->
       
@@ -223,19 +296,20 @@
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
+      
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Jaket Adidas Brown</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                        <img src="./assets/images/lake.jpg" class="img-fluid" alt="Responsive image">
+                        <img src="./assets/images/adidas.jpg" class="img-fluid" alt="Responsive image">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
+                            Jaket dengan kualitas kain terbaik, nyaman dan stylish namun tetap sporty! Buruan tunggu apa lagi? Stock terbatasa! Siapa cepat dia dapat!
                         </p>
                 </div>
                 <div class="modal-footer">
@@ -249,13 +323,13 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <h5 class="modal-title" id="exampleModalLabel">Set Outfit dari H&M</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
-                            <img src="./assets/images/shore.jpg" class="img-fluid" alt="Responsive image">
+                            <img src="./assets/images/setoutfit.jpg" class="img-fluid" alt="Responsive image">
             <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
                 </p>
@@ -271,13 +345,13 @@
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">Sepatu CTNZ Original</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
-                                <img src="./assets/images/waterfall.jpg" class="img-fluid" alt="Responsive image">
+                                <img src="./assets/images/sepatu.jpg" class="img-fluid" alt="Responsive image">
           <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
                 </p>
@@ -293,13 +367,13 @@
         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">Kemeja Bercoult Ori</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
-                                    <img src="./assets/images/thunder.jpg" class="img-fluid" alt="Responsive image">
+                                    <img src="./assets/images/kemeja.jpg" class="img-fluid" alt="Responsive image">
           <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque culpa quo sit rem pariatur deleniti, repellat aut id ipsa reprehenderit enim exercitationem harum alias eum fugit. Quia, inventore quaerat.
                 </p>
@@ -315,5 +389,30 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Slider -->
+    <script src="slider.js"></script> 
+    <script>
+      $("#slider").sliderNd({
+        delay		:	200,
+        autoplay	:	true,
+        navigation	:	true
+      });
+      </script>
+       </body>
+       <script type="text/javascript">
+      
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      
+      </script>      
   </body>
 </html>
